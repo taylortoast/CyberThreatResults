@@ -1,31 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Session Summary</title>
-    <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css">
+  <title>Session Performance</title>
 </head>
+
 <body>
-    <header>
-        <h1>CyberThreats Training Dashboard</h1>
-        <nav>
-            <a href="index.html">Question Analysis</a>
-            <a href="players.html">Player Performance</a>
-            <a href="sessions.html">Session Summary</a>
-        </nav>
-    </header>
-    <main>
-        <section id="sessions-overview">
-            <h2>Session Summary</h2>
-            <p>This page will present the results of individual training sessions. It will summarize overall game performance, highlight notable events, and show aggregated metrics for all players.</p>
-        </section>
-        <section id="session-history">
-            <h3>Session History</h3>
-            <p>A table or list of all recorded sessions will appear here, allowing instructors to select a specific session and drill down into its details.</p>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2025 CyberThreats Training</p>
-    </footer>
+<div class="container">
+
+  <div class="sidebar">
+    <h2>Daschbase</h2>
+    <a href="index.html" class="nav-item">Questions</a>
+    <a href="sessions.html" class="nav-item active">Recent Sessions</a>
+    <a href="players.html" class="nav-item">Players</a>
+    <a href="report.html" class="nav-item">Reports</a>
+  </div>
+
+  <div class="main">
+    <h1>Session Performance</h1>
+
+    <div class="metrics">
+      <div class="metric-card">
+        <h3>Questions</h3>
+        <div class="value">12</div>
+      </div>
+
+      <div class="metric-card">
+        <h3>Correct</h3>
+        <div class="value">10</div>
+      </div>
+    </div>
+
+    <h2 class="section-title">Quiz Results</h2>
+    <table>
+      <tr>
+        <th>Player</th>
+        <th>Answered</th>
+        <th>Correct</th>
+      </tr>
+
+      <tr><td>Conselez</td><td>12</td><td>10</td></tr>
+      <tr><td>Nguyen</td><td>12</td><td>10</td></tr>
+      <tr><td>Patel</td><td>13</td><td>12</td></tr>
+      <tr><td>Russell</td><td>14</td><td>12</td></tr>
+    </table>
+
+    <h2 class="section-title">Session Trend</h2>
+    <div class="chart"></div>
+
+  </div>
+
+</div>
 </body>
 </html>

@@ -1,31 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>CyberThreats Training Dashboard</title>
-    <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css">
+  <title>Question Analysis</title>
 </head>
+
 <body>
-    <header>
-        <h1>CyberThreats Training Dashboard</h1>
-        <nav>
-            <a href="index.html">Question Analysis</a>
-            <a href="players.html">Player Performance</a>
-            <a href="sessions.html">Session Summary</a>
-        </nav>
-    </header>
-    <main>
-        <section id="overview">
-            <h2>Question Analysis</h2>
-            <p>This page provides an overview of quiz questions across all recorded training sessions. It highlights the rate of correct and incorrect responses and helps instructors identify common misconceptions.</p>
-        </section>
-        <section id="trends">
-            <h3>Trends Over Time</h3>
-            <p>Graphs and tables showing learners’ improvement over successive sessions will appear here. Use these insights to tailor future training and review lessons.</p>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2025 CyberThreats Training</p>
-    </footer>
+<div class="container">
+
+  <div class="sidebar">
+    <h2>Dashboard</h2>
+    <a href="index.html" class="nav-item active">Questions</a>
+    <a href="players.html" class="nav-item">Players</a>
+    <a href="session.html" class="nav-item">Sessions</a>
+    <a href="report.html" class="nav-item">Reports</a>
+  </div>
+
+  <div class="main">
+    <h1>Question Analysis</h1>
+
+    <div class="metrics">
+      <div class="metric-card">
+        <h3>Questions</h3>
+        <div class="value">185</div>
+      </div>
+
+      <div class="metric-card">
+        <h3>Correct</h3>
+        <div class="value">10</div>
+      </div>
+    </div>
+
+    <h2 class="section-title">Question Breakdown</h2>
+
+    <table>
+      <tr>
+        <th>Code</th>
+        <th>Question</th>
+        <th>Correct</th>
+        <th>Chart</th>
+      </tr>
+
+      <tr>
+        <td>A1</td>
+        <td>Quala system to serdio reactiex espacentric</td>
+        <td>16</td>
+        <td><div class="chart"></div></td>
+      </tr>
+
+      <tr>
+        <td>A2</td>
+        <td>Quality nasvegaseodraves a visobjct mashimg</td>
+        <td>65</td>
+        <td><div class="chart"></div></td>
+      </tr>
+
+      <tr>
+        <td>A3</td>
+        <td>Answers a performenation in isureel</td>
+        <td>66</td>
+        <td><div class="chart"></div></td>
+      </tr>
+    </table>
+
+  </div>
+
+</div>
 </body>
 </html>

@@ -1,31 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Player Performance</title>
-    <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css">
+  <title>Players</title>
 </head>
+
 <body>
-    <header>
-        <h1>CyberThreats Training Dashboard</h1>
-        <nav>
-            <a href="index.html">Question Analysis</a>
-            <a href="players.html">Player Performance</a>
-            <a href="sessions.html">Session Summary</a>
-        </nav>
-    </header>
-    <main>
-        <section id="players-overview">
-            <h2>Player Performance</h2>
-            <p>This page will list all participants and display their individual performance metrics such as total questions answered, correctness percentage, and average response time across sessions.</p>
-        </section>
-        <section id="player-details">
-            <h3>Detailed View</h3>
-            <p>Select a player to view a breakdown of their answers for each question, including which options they selected and the time taken to respond.</p>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2025 CyberThreats Training</p>
-    </footer>
+<div class="container">
+
+  <div class="sidebar">
+    <h2>Players</h2>
+    <a href="players.html" class="nav-item active">Players</a>
+    <a href="index.html" class="nav-item">Questions</a>
+    <a href="session.html" class="nav-item">Sessions</a>
+    <a href="report.html" class="nav-item">Reports</a>
+  </div>
+
+  <div class="main">
+    <h1>Players</h1>
+
+    <table>
+      <tr>
+        <th>Player</th>
+        <th>Score</th>
+        <th>Progress</th>
+      </tr>
+
+      <tr>
+        <td>Conselez</td>
+        <td>6</td>
+        <td><div class="chart"></div></td>
+      </tr>
+
+      <tr>
+        <td>Nguyen</td>
+        <td>6</td>
+        <td><div class="chart"></div></td>
+      </tr>
+
+      <tr>
+        <td>Patel</td>
+        <td>24</td>
+        <td><div class="chart"></div></td>
+      </tr>
+
+      <tr>
+        <td>Russell</td>
+        <td>24%</td>
+        <td><div class="chart"></div></td>
+      </tr>
+
+    </table>
+
+  </div>
+
+</div>
 </body>
 </html>
